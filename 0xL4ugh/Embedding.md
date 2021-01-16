@@ -16,6 +16,7 @@ Thus, we knew that the challenge is about <font color="#f03c15"> Eval() Vulnerab
 
 Then, we put 
 > print_r(scandir(getcwd()))
+
 to get all file in this directory.\
 
 The result changed to
