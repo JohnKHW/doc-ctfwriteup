@@ -12,19 +12,19 @@ We tried to input
 The result changed to
 > /var/www/html/Embedding welcome
 
-Thus, we knew that the challenge is about <font color="#f03c15"> Eval() Vulnerability </font>\
+Thus, we knew that the challenge is about <font color="#f03c15"> Eval() Vulnerability </font>
 
 Then, we put 
 > print_r(scandir(getcwd()))
 
-to get all file in this directory.\
+to get all file in this directory.
 
 The result changed to
 > Array ( \[0\] => . \[1\] => .. \[2\] => fl@g.php \[3\] => index.php ) 1 welcome
 
-Finally, we knew that the flag is stored in fl@g.php\
+Finally, we knew that the flag is stored in fl@g.php
 
-Before we get the source code of fl@g.php, we should know the constants of the input first\
+Before we get the source code of fl@g.php, we should know the constants of the input first
 
 Thus, we typed
 > show_source(end(scandir(getcwd())))
