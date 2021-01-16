@@ -1,5 +1,5 @@
 # Web-Embedding
-URL of the challenge: [http://138.91.58.10/Embedding/] (Embedding)
+URL of the challenge: [http://138.91.58.10/Embedding/](Embedding)
 
 In the page, we got a input box
 ```html
@@ -72,11 +72,11 @@ Thus, we knew that the input only can be\
 First we try that
 > read_file(next(array_reverse(scandir('.'))))
 
-However, the string length is 43, we cannot get the result.\
+However, the string length is 43, we cannot get the result.
 
-Thus, we found that we can set the header of the request to store variable fl@g/.php\
+Thus, we found that we can set the header of the request to store variable fl@g.php
 
-Then, we use curl command in console to get the source code of fl@g/.php
+Then, we use curl command in console to get the source code of fl@g.php
 
 > curl -s -H "Flag: fl@g.php" "http://138.91.58.10/Embedding/?username=show_source(end(getallheaders()))"
 
